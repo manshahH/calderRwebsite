@@ -2,10 +2,22 @@ import { motion } from 'framer-motion';
 import RevealText from '../ui/RevealText';
 
 const testimonials = [
-  { avatar: "SJ", name: "Sarah J.", role: "Head of CX · Norva Commerce", quote: "CalderR didn't just build us a chatbot — they fundamentally changed how our support team operates. The AI handles 60% of our tickets now, and it actually knows our products better than some of our staff did." },
-  { avatar: "MR", name: "Marcus R.", role: "Director of Sales · Elevate Realty", quote: "The ROI was visible within two weeks. Our agents spend zero time on data entry now — the AI handles qualification, scheduling, and follow-up. We closed 3x more deals in Q1 after going live." },
-  { avatar: "PL", name: "Priya L.", role: "COO · Meridian Legal Group", quote: "I was sceptical about AI for our niche. CalderR took the time to really understand our compliance constraints and built a solution that felt bespoke. Couldn't recommend them more highly." },
-  { avatar: "TK", name: "Tom K.", role: "CMO · Stackly SaaS", quote: "Our content team was drowning in requests. The AI content system CalderR built now generates first drafts in our voice, and our writers spend their time on strategy instead of typing. Game-changing." }
+  {
+    avatar: "CR",
+    name: "Client Review",
+    role: "Rating is 5.0 out of 5.",
+    rating: "5.0",
+    quote: "We've been very happy working with Hamdan and feel that he has communicated great and delivered outstanding results. I would be more than happy to work with him again in the future and can recommend his services to anyone. Five stars!",
+    highlights: ["Committed to Quality", "Clear Communicator", "Detail Oriented"]
+  },
+  {
+    avatar: "CR",
+    name: "Client Review",
+    role: "Rating is 5.0 out of 5.",
+    rating: "5.0",
+    quote: "Very much impressed with Hamdan's skills, dedication, and quick work. He communicates easily, is very professional, and has great problem-solving skills. Hamdan is creative and has strong knowledge and experience, especially in Agentic AI.",
+    highlights: ["Clear Communicator", "Professional", "Solution Oriented", "Reliable", "Accountable for Outcomes"]
+  }
 ];
 
 export default function Testimonials() {
@@ -35,6 +47,19 @@ export default function Testimonials() {
               <div className="flex flex-row gap-1 mb-6">
                 {[...Array(5)].map((_, j) => (
                   <div key={j} className="w-[12px] h-[12px] bg-[#D4A853]" style={{ clipPath: 'polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)' }} />
+                ))}
+              </div>
+              <div className="font-['JetBrains_Mono'] text-[11px] text-[#E2E8F2]/70 mb-5">
+                {t.rating}
+              </div>
+              <div className="flex flex-wrap gap-2 mb-6">
+                {t.highlights.map((item) => (
+                  <span
+                    key={item}
+                    className="font-['JetBrains_Mono'] text-[10px] uppercase tracking-wide px-2.5 py-1 rounded-full bg-[#3BAFD4]/[0.08] border border-[#3BAFD4]/20 text-[#3BAFD4]"
+                  >
+                    {item}
+                  </span>
                 ))}
               </div>
               <div className="flex items-center gap-3">
