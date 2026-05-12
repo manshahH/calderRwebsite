@@ -79,16 +79,12 @@ export default function Contact() {
           <div className="flex flex-col gap-3 mb-8">
             <div className="flex flex-row items-center gap-3 text-[#E2E8F2] font-['Outfit'] font-[400] text-[14px]">
               <Mail className="w-4 h-4 text-[#3BAFD4]" strokeWidth={2} />
-              hello@calderr.ai
-            </div>
-            <div className="flex flex-row items-center gap-3 text-[#E2E8F2] font-['Outfit'] font-[400] text-[14px]">
-              <Phone className="w-4 h-4 text-[#3BAFD4]" strokeWidth={2} />
-              +1 (800) CALDERR-AI
+              contact@calderr
             </div>
           </div>
 
           <a 
-            href="https://wa.me/923495804995" 
+            href="https://wa.link/lrm669" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex flex-row items-center gap-2 bg-[#25D366] hover:bg-[#1fbd5b] text-white font-['Outfit'] font-[600] text-[14px] rounded-lg px-5 py-3 transition-all duration-200 hover:-translate-y-[1px] hover:shadow-[0_4px_12px_rgba(37,211,102,0.3)]"
@@ -164,7 +160,7 @@ export default function Contact() {
                   }`}
                 >
                   {status === 'loading' && 'Processing your enquiry with our AI…'}
-                  {status === 'error' && 'Something went wrong. Please email us directly at hello@calderr.ai'}
+                  {status === 'error' && 'Something went wrong. Please email us directly at contact@calderr'}
                   {status === 'success' && (
                     <div>
                       <strong className="block mb-3">✓ Message received!</strong>

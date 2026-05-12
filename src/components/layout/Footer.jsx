@@ -70,9 +70,9 @@ export default function Footer() {
             <div className="flex flex-col">
               <h5 className="font-['JetBrains_Mono'] text-[11px] text-[#E2E8F2]/40 uppercase tracking-widest mb-5">Contact</h5>
               <ul className="flex flex-col gap-3">
-                <li><a href="mailto:hello@calderr.ai" className="font-['Outfit'] font-[300] text-[14px] text-[#E2E8F2]/70 hover:text-[#E2E8F2] transition-colors duration-200">hello@calderr.ai</a></li>
+                <li><a href="mailto:contact@calderr" className="font-['Outfit'] font-[300] text-[14px] text-[#E2E8F2]/70 hover:text-[#E2E8F2] transition-colors duration-200">contact@calderr</a></li>
                 <li><a href="#contact" className="font-['Outfit'] font-[300] text-[14px] text-[#E2E8F2]/70 hover:text-[#E2E8F2] transition-colors duration-200">Book a Call</a></li>
-                <li><a href="https://wa.me/923495804995" className="font-['Outfit'] font-[300] text-[14px] text-[#E2E8F2]/70 hover:text-[#E2E8F2] transition-colors duration-200">WhatsApp Us</a></li>
+                <li><a href="https://wa.link/lrm669" className="font-['Outfit'] font-[300] text-[14px] text-[#E2E8F2]/70 hover:text-[#E2E8F2] transition-colors duration-200">WhatsApp Us</a></li>
               </ul>
             </div>
 
@@ -92,7 +92,7 @@ export default function Footer() {
 
       {/* FLOATING WHATSAPP */}
       <motion.a
-        href="https://wa.me/923495804995"
+        href="https://wa.link/lrm669"
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}
@@ -113,7 +113,7 @@ export default function Footer() {
         <a href="#contact" className="flex-1 bg-[#3BAFD4] text-[#060A14] font-['Syne'] font-[700] text-[14px] rounded-lg h-12 flex items-center justify-center transition-transform active:scale-95">
           Book a Call
         </a>
-        <a href="https://wa.me/923495804995" className="flex-1 bg-transparent border border-[#3BAFD4]/30 text-[#3BAFD4] font-['Syne'] font-[700] text-[14px] rounded-lg h-12 flex items-center justify-center transition-colors active:bg-[#3BAFD4]/10">
+        <a href="https://wa.link/lrm669" className="flex-1 bg-transparent border border-[#3BAFD4]/30 text-[#3BAFD4] font-['Syne'] font-[700] text-[14px] rounded-lg h-12 flex items-center justify-center transition-colors active:bg-[#3BAFD4]/10">
           WhatsApp Us
         </a>
       </div>
