@@ -29,13 +29,13 @@ export default function Footer() {
                 AI should work for your business, not the other way around. We build the systems that make it happen.
               </p>
               <div className="flex flex-row gap-2.5">
-                <a href="#" className="w-[34px] h-[34px] rounded-lg bg-[#060A14] border border-[rgba(255,255,255,0.07)] text-[#E2E8F2]/60 flex items-center justify-center transition-all duration-200 hover:border-[rgba(59,175,212,0.28)] hover:text-[#3BAFD4]">
+                <a href="https://www.linkedin.com/company/calderr/" className="w-[34px] h-[34px] rounded-lg bg-[#060A14] border border-[rgba(255,255,255,0.07)] text-[#E2E8F2]/60 flex items-center justify-center transition-all duration-200 hover:border-[rgba(59,175,212,0.28)] hover:text-[#3BAFD4]">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                 </a>
                 <a href="https://x.com/officialcalderr" aria-label="X" className="w-[34px] h-[34px] rounded-lg bg-[#060A14] border border-[rgba(255,255,255,0.07)] text-[#E2E8F2]/60 flex items-center justify-center transition-all duration-200 hover:border-[rgba(59,175,212,0.28)] hover:text-[#3BAFD4]">
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M7 6l10 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M17 6L7 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
                 </a>
-                <a href="#" className="w-[34px] h-[34px] rounded-lg bg-[#060A14] border border-[rgba(255,255,255,0.07)] text-[#E2E8F2]/60 flex items-center justify-center transition-all duration-200 hover:border-[rgba(59,175,212,0.28)] hover:text-[#3BAFD4]">
+                <a href="https://www.instagram.com/calderr.official/" className="w-[34px] h-[34px] rounded-lg bg-[#060A14] border border-[rgba(255,255,255,0.07)] text-[#E2E8F2]/60 flex items-center justify-center transition-all duration-200 hover:border-[rgba(59,175,212,0.28)] hover:text-[#3BAFD4]">
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
                 </a>
               </div>
