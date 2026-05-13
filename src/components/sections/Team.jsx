@@ -5,47 +5,47 @@ import { ExternalLink } from 'lucide-react'
 const team = [
   {
     id: 1,
-    name: 'Doc',
-    role: 'AI Architect',
-    photo: '/team/doc.jpg',
+    name: 'Aaina Batool',
+    role: 'Co-founder & Client Strategy Lead',
+    photo: '/team/aaina.jpeg',
     hasPhoto: true,
-    initials: 'DC',
-    bio: 'Designs the intelligence layer. Translates business problems into AI system architecture that actually ships and scales.',
-    tags: ['System Design', 'LLM Integration', 'Agent Workflows', 'Claude API'],
-    linkedin: 'https://www.linkedin.com/in/manshah-hussain'
+    initials: 'AB',
+    bio: 'I help businesses turn complex processes into scalable AI-driven systems by leading the development of intelligent automation solutions at CalderR.',
+    tags: ['ROI Analysis', 'Discovery', 'Client Strategy', 'Ops'],
+    linkedin: 'https://www.linkedin.com/in/aainabatool/'
   },
   {
     id: 2,
-    name: 'Sarah K.',
-    role: 'Automation Engineer',
-    photo: null,
-    hasPhoto: false,
-    initials: 'SK',
+    name: 'Hamdan Sethi',
+    role: 'Co-founder & System Architect',
+    photo: '/team/hamdan.jpeg',
+    hasPhoto: true,
+    initials: 'HS',
     bio: 'Builds the workflows that eliminate manual work. Connects your tools into systems that run themselves.',
     tags: ['n8n', 'Make.com', 'API Design', 'Process Mapping'],
-    linkedin: '#'
+    linkedin: 'https://www.linkedin.com/in/hamdansethi'
   },
   {
     id: 3,
-    name: 'Raza M.',
-    role: 'Business Strategist',
-    photo: null,
-    hasPhoto: false,
-    initials: 'RM',
-    bio: 'Bridges the gap between AI capability and business reality. Ensures every deployment has a clear ROI before a line is written.',
-    tags: ['ROI Analysis', 'Discovery', 'Client Strategy', 'Ops'],
-    linkedin: '#'
+    name: 'Hussain Raza',
+    role: 'AI Engineer',
+    photo: '/team/hussain.png',
+    hasPhoto: true,
+    initials: 'HT',
+    bio: 'Specializes in connecting AI systems to existing business stacks. Zero disruption, maximum impact.',
+    tags: ['CRM Integration', 'Data Pipelines', 'Deployment', 'QA'],
+    linkedin: 'https://www.linkedin.com/in/hussain-razaturi/'
   },
   {
     id: 4,
-    name: 'Aisha T.',
-    role: 'AI Integration Lead',
-    photo: null,
-    hasPhoto: false,
-    initials: 'AT',
-    bio: 'Specializes in connecting AI systems to existing business stacks. Zero disruption, maximum impact.',
-    tags: ['CRM Integration', 'Data Pipelines', 'Deployment', 'QA'],
-    linkedin: '#'
+    name: 'Manshah Hussain Bangash',
+    role: 'AI Architect & Prompt Engineer',
+    photo: '/team/manshah.png',
+    hasPhoto: true,
+    initials: 'MB',
+    bio: 'Designs the intelligence layer. Translates business problems into AI system architecture that actually ships and scales.',
+    tags: ['System Design', 'LLM Integration', 'Agent Workflows', 'API Gateways'],
+    linkedin: 'https://www.linkedin.com/in/manshah-hussain'
   }
 ]
 

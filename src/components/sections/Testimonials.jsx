@@ -5,50 +5,23 @@ const testimonials = [
   {
     avatar: "CR",
     name: "Client Review",
-    role: "Rating is 5.0 out of 5.",
     rating: "5.0",
-    quote: "We've been very happy working with Hamdan and feel that he has communicated great and delivered outstanding results. I would be more than happy to work with him again in the future and can recommend his services to anyone. Five stars!",
+    quote: "We've been very happy working with CalderR and feel that they have communicated great and delivered outstanding results. I would be more than happy to work with them again in the future and can recommend their services to anyone. Five stars!",
     highlights: ["Committed to Quality", "Clear Communicator", "Detail Oriented"]
   },
   {
     avatar: "CR",
     name: "Client Review",
-    role: "Rating is 5.0 out of 5.",
     rating: "5.0",
-    quote: "Very much impressed with Hamdan's skills, dedication, and quick work. He communicates easily, is very professional, and has great problem-solving skills. Hamdan is creative and has strong knowledge and experience, especially in Agentic AI.",
+    quote: "Very much impressed with CalderR team's skills, dedication, and quick work. They communicates easily, are very professional, and have great problem-solving skills. The team is creative and has strong knowledge and experience, especially in Agentic AI.",
     highlights: ["Clear Communicator", "Professional", "Solution Oriented", "Reliable", "Accountable for Outcomes"]
   },
   { 
-    avatar: "SJ", 
-    name: "Sarah J.", 
-    role: "Head of CX · Norva Commerce", 
+    avatar: "CR", 
+    name: "Client Review", 
     rating: "5.0",
-    quote: "CalderR didn't just build us a chatbot; they fundamentally changed how our support team operates. The AI handles 60% of our tickets now, and it actually knows our products better than some of our staff did.",
-    highlights: []
-  },
-  { 
-    avatar: "MR", 
-    name: "Marcus R.", 
-    role: "Director of Sales · Elevate Realty", 
-    rating: "5.0",
-    quote: "The ROI was visible within two weeks. Our agents spend zero time on data entry now; the AI handles qualification, scheduling, and follow-up. We closed 3x more deals in Q1 after going live.",
-    highlights: []
-  },
-  { 
-    avatar: "PL", 
-    name: "Priya L.", 
-    role: "COO · Meridian Legal Group", 
-    rating: "5.0",
-    quote: "I was sceptical about AI for our niche. CalderR took the time to really understand our compliance constraints and built a solution that felt bespoke. Couldn't recommend them more highly.",
-    highlights: []
-  },
-  { 
-    avatar: "TK", 
-    name: "Tom K.", 
-    role: "CMO · Stackly SaaS", 
-    rating: "5.0",
-    quote: "Our content team was drowning in requests. The AI content system CalderR built now generates first drafts in our voice, and our writers spend their time on strategy instead of typing. Game-changing.",
-    highlights: []
+    quote: "CalderR built us a chatbot which fundamentally changed how our support team operates. The AI handles 60% of our tickets now, and it actually knows our products better than some of our staff did.",
+    highlights: ['Professional', 'Reliable', 'Accountable for Outcomes']
   }
 ];
 
