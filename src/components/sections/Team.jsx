@@ -38,13 +38,13 @@ const team = [
   },
   {
     id: 4,
-    name: 'Manshah Hussain Bangash',
-    role: 'AI Architect & Prompt Engineer',
+    name: 'Manshah H. Bangash',
+    role: 'AI Architect',
     photo: '/team/manshah.png',
     hasPhoto: true,
     initials: 'MB',
-    bio: 'Designs the intelligence layer. Translates business problems into AI system architecture that actually ships and scales.',
-    tags: ['LLM Integration', 'Agent Workflows', 'API Gateways'],
+    bio: 'Designs the intelligence layer and translates business problems into AI systems that ship and scale.',
+    tags: ['LLM Integration', 'Agent Workflows'],
     linkedin: 'https://www.linkedin.com/in/manshah-hussain'
   }
 ]
