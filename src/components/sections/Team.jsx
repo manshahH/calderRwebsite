@@ -10,7 +10,7 @@ const team = [
     photo: '/team/aaina.jpeg',
     hasPhoto: true,
     initials: 'AB',
-    bio: 'I help businesses turn complex processes into scalable AI-driven systems by leading the development of intelligent automation solutions at CalderR.',
+    bio: 'Helping businesses turn complex processes into scalable AI-driven systems by leading the development of intelligent automation solutions.',
     tags: ['ROI Analysis', 'Discovery', 'Client Strategy', 'Ops'],
     linkedin: 'https://www.linkedin.com/in/aainabatool/'
   },
@@ -22,7 +22,7 @@ const team = [
     hasPhoto: true,
     initials: 'HS',
     bio: 'Builds the workflows that eliminate manual work. Connects your tools into systems that run themselves.',
-    tags: ['n8n', 'Make.com', 'API Design', 'Process Mapping'],
+    tags: ['Make.com', 'API Design', 'Process Mapping'],
     linkedin: 'https://www.linkedin.com/in/hamdansethi'
   },
   {
@@ -44,7 +44,7 @@ const team = [
     hasPhoto: true,
     initials: 'MB',
     bio: 'Designs the intelligence layer. Translates business problems into AI system architecture that actually ships and scales.',
-    tags: ['System Design', 'LLM Integration', 'Agent Workflows', 'API Gateways'],
+    tags: ['LLM Integration', 'Agent Workflows', 'API Gateways'],
     linkedin: 'https://www.linkedin.com/in/manshah-hussain'
   }
 ]
