@@ -86,7 +86,7 @@ export default function CaseStudies() {
             className="font-['Syne'] font-[700] text-[clamp(32px,4vw,52px)] text-[#E2E8F2] tracking-[-1px] leading-[1.1] mb-6"
           />
           <p className="font-['Outfit'] font-[300] text-lg text-[#E2E8F2]/70 max-w-xl mx-auto">
-            Real outcomes from real deployments — not demos, not prototypes.
+            Real outcomes from real deployments. Not demos, not prototypes.
           </p>
         </div>
 

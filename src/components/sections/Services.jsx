@@ -8,7 +8,7 @@ const services = [
   {
     icon: MessageSquare,
     title: "AI Chatbots & Assistants",
-    description: "Custom conversational agents trained on your business data — available 24/7 across web, app, and messaging platforms.",
+    description: "Custom conversational agents trained on your business data, available 24/7 across web, app, and messaging platforms.",
     stat: "One client deflected 62% of support tickets within 30 days"
   },
   {
@@ -20,7 +20,7 @@ const services = [
   {
     icon: Bot,
     title: "Custom AI Agents",
-    description: "Autonomous agents that research, decide, and act — completing multi-step tasks with minimal human intervention.",
+    description: "Autonomous agents that research, decide, and act, completing multi-step tasks with minimal human intervention.",
     stat: "Increased agent task completion rate by 3x"
   },
   {
@@ -38,7 +38,7 @@ const services = [
   {
     icon: PenTool,
     title: "AI Content & Copy Systems",
-    description: "Scalable content pipelines that generate on-brand copy, product descriptions, emails, and more — in your voice.",
+    description: "Scalable content pipelines that generate on-brand copy, product descriptions, emails, and more, in your voice.",
     stat: "Generated 1,200 product descriptions in 4 hours"
   }
 ];

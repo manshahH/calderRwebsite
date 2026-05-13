@@ -36,7 +36,7 @@ export default function Industries() {
             Built for Your Industry
           </h2>
           <p className="font-['Outfit'] font-[300] text-lg text-[#E2E8F2]/70 leading-relaxed">
-            We bring deep domain context to every engagement — not just generic AI.
+            We bring deep domain context to every engagement. Not just generic AI.
           </p>
         </div>
 

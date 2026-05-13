@@ -58,7 +58,7 @@ export default function Hero() {
           {/* Subtext */}
           <motion.p variants={itemVariants} className="font-['Outfit'] font-[300] text-lg text-[#E2E8F2]/70 leading-relaxed max-w-md mb-10">
             We don't sell AI hype. We understand your operations, identify what moves the needle, 
-            and build systems that deliver measurable ROI — not demos.
+            and build systems that deliver measurable ROI. Not demos.
           </motion.p>
 
           {/* Buttons */}

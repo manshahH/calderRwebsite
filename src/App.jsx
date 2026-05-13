@@ -68,7 +68,7 @@ function App() {
           </ErrorBoundary>
           <Philosophy />
           <Services />
-          <CTABanner title="Ready to See What AI Can Do?" subtitle="Book a free 30-minute strategy call. No pressure, no pitch — just clarity." ctaText="Book Your Free Call →" ctaHref="#contact" />
+          <CTABanner title="Ready to See What AI Can Do?" subtitle="Book a free 30-minute strategy call. No pressure, no pitch. Just clarity." ctaText="Book Your Free Call →" ctaHref="#contact" />
           <Industries />
           <CaseStudies />
           <ROICalculator />

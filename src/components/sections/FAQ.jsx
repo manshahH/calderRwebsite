@@ -1,13 +1,13 @@
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '../ui/accordion';
 
 const faqs = [
-  { q: "What industries do you work with?", a: "We work across e-commerce, healthcare, real estate, education, finance, legal, SaaS, and professional services — among others. If you don't see your industry, reach out. We've delivered in 20+ verticals." },
-  { q: "How long does an AI project take?", a: "Most projects launch within 2–6 weeks depending on complexity. A single chatbot or automation can go live in as little as 5 days. Enterprise systems with multiple integrations typically take 4–8 weeks." },
-  { q: "Do I need technical knowledge to work with you?", a: "Not at all. We handle all the technical implementation. You bring the business context and goals — we translate that into working AI. Our clients range from solo founders to enterprise teams with no internal tech resources." },
-  { q: "How is my data kept secure?", a: "We follow industry-standard security practices: encrypted data in transit and at rest, role-based access control, and we never train models on your proprietary data without explicit consent. GDPR compliance is built into every project." },
-  { q: "What tools and platforms do you integrate with?", a: "We integrate with virtually any tool with an API — HubSpot, Salesforce, Slack, Notion, Airtable, Shopify, WhatsApp, Google Workspace, and hundreds more. If it connects to the internet, we can connect to it." },
-  { q: "Do you offer ongoing support after launch?", a: "Yes. All retainer plans include continuous monitoring, optimisation, and support. For project-based work, we offer maintenance packages to keep your AI performing at its best as your business evolves." },
-  { q: "Can I see examples before committing?", a: "Absolutely. Book a free discovery call and we'll walk you through live demos and relevant case studies for your industry. No commitment required — we want you to be confident before we begin." },
+  { q: "What industries do you work with?", a: "We work across e-commerce, healthcare, real estate, education, finance, legal, SaaS, and professional services, among others. If you don't see your industry, reach out. We've delivered in 20+ verticals." },
+  { q: "How long does implementation typically take?", a: "Most projects go from strategy to live deployment in 2-4 weeks. Complex enterprise integrations may take 6-8 weeks. We emphasize speed to value over drawn-out development cycles." },
+  { q: "Do I need technical knowledge to work with you?", a: "Not at all. We handle all the technical implementation. You bring the business context and goals; we translate that into working AI. Our clients range from solo founders to enterprise teams with no internal tech resources." },
+  { q: "Is our company data secure?", a: "Yes. We use enterprise-grade LLMs with strict data privacy agreements. Your proprietary data is never used to train public models, and we implement proper access controls and encryption at rest and in transit." },
+  { q: "What tools and platforms do you integrate with?", a: "We integrate with virtually any tool with an API: HubSpot, Salesforce, Slack, Notion, Airtable, Shopify, WhatsApp, Google Workspace, and hundreds more. If it connects to the internet, we can connect to it." },
+  { q: "How do you measure success?", a: "Before we build anything, we define clear KPIs with you (hours saved, ticket resolution rate, lead conversion increase). Our systems are built to track and report on these exact metrics." },
+  { q: "Can I see examples before committing?", a: "Absolutely. Book a free discovery call and we'll walk you through live demos and relevant case studies for your industry. No commitment required; we want you to be confident before we begin." },
   { q: "What's your pricing model?", a: "We offer both monthly retainers (best for ongoing AI development and optimisation) and fixed-price project engagements (best for a defined scope). See our pricing section above, or contact us for a custom quote." }
 ];
 

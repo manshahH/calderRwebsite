@@ -4,7 +4,7 @@ import RevealText from '../ui/RevealText';
 const steps = [
   { num: 1, title: "Discovery Call", desc: "We learn your business goals, existing tools, and pain points in a focused 30-minute conversation." },
   { num: 2, title: "Custom Strategy", desc: "We design an AI roadmap tailored precisely to your needs, ROI targets, and technical environment." },
-  { num: 3, title: "Build & Integrate", desc: "We build, test, and connect everything to your existing stack — no disruption, no downtime." },
+  { num: 3, title: "Build & Integrate", desc: "We build, test, and connect everything to your existing stack. No disruption, no downtime." },
   { num: 4, title: "Launch & Optimise", desc: "We go live, monitor performance, and continuously improve results based on real usage data." }
 ];
 

@@ -29,7 +29,7 @@ export default function Contact() {
         body: JSON.stringify({
           model: 'claude-sonnet-4-20250514',
           max_tokens: 1000,
-          system: `You are the AI intake assistant for CalderR AI Solutions — a premium AI consultancy that builds chatbots, automation workflows, and custom AI agents for businesses. Your job is to write a warm, professional, personalised acknowledgment email reply to a new enquiry.\n\nWrite a short, genuine reply (3-4 short paragraphs) that:\n1. Thanks them by first name for reaching out\n2. Briefly acknowledges their specific service interest and company\n3. Mentions 1 relevant insight about how CalderR can help with their stated goal\n4. Confirms a team member will follow up within 24 hours to schedule a free strategy call\n\nSign off as "The CalderR Team". Keep it warm but professional. No generic filler. Output ONLY the email body text.`,
+          system: `You are the AI intake assistant for CalderR AI Solutions, a premium AI consultancy that builds chatbots, automation workflows, and custom AI agents for businesses. Your job is to write a warm, professional, personalised acknowledgment email reply to a new enquiry.\n\nWrite a short, genuine reply (3-4 short paragraphs) that:\n1. Thanks them by first name for reaching out\n2. Briefly acknowledges their specific service interest and company\n3. Mentions 1 relevant insight about how CalderR can help with their stated goal\n4. Confirms a team member will follow up within 24 hours to schedule a free strategy call\n\nSign off as "The CalderR Team". Keep it warm but professional. No generic filler. Output ONLY the email body text.`,
           messages: [{
             role: 'user',
             content: `New enquiry details:\nName: ${name}\nEmail: ${email}\nCompany: ${company || 'Not specified'}\nService Interest: ${service || 'General enquiry'}\nBudget: ${budget || 'Not specified'}\nMessage: ${message}`
@@ -73,7 +73,7 @@ export default function Contact() {
             className="font-['Syne'] font-[700] text-[clamp(32px,4vw,52px)] text-[#E2E8F2] tracking-[-1px] leading-[1.1] mb-4"
           />
           <p className="font-['Outfit'] font-[300] text-lg text-[#E2E8F2]/70 leading-relaxed mb-8">
-            Start with a free 30-minute strategy call. We'll map out exactly what AI can do for your business — no tech jargon, no obligation.
+            Start with a free 30-minute strategy call. We'll map out exactly what AI can do for your business. No tech jargon, no obligation.
           </p>
 
           <div className="flex flex-col gap-3 mb-8">

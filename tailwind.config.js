@@ -5,18 +5,9 @@ export default {
   theme: {
   	extend: {
   		fontFamily: {
-  			syne: [
-  				'Syne',
-  				'sans-serif'
-  			],
-  			outfit: [
-  				'Outfit',
-  				'sans-serif'
-  			],
-  			mono: [
-  				'JetBrains Mono',
-  				'monospace'
-  			]
+  			syne: ['Roboto Condensed', 'sans-serif'],
+  			outfit: ['Roboto', 'sans-serif'],
+  			mono: ['JetBrains Mono', 'monospace'],
   		},
   		colors: {
   			bg: '#060A14',
