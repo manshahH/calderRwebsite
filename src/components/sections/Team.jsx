@@ -6,12 +6,12 @@ const team = [
   {
     id: 1,
     name: 'Aaina Batool',
-    role: 'Co-founder & Client Strategy Lead',
+    role: 'Co-founder & AI Strategist',
     photo: '/team/aaina.jpeg',
     hasPhoto: true,
     initials: 'AB',
     bio: 'Helping businesses turn complex processes into scalable AI-driven systems by leading the development of intelligent automation solutions.',
-    tags: ['ROI Analysis', 'Discovery', 'Client Strategy', 'Ops'],
+    tags: ['ROI Analysis', 'AI Implementation', 'AI Strategy', 'Ops'],
     linkedin: 'https://www.linkedin.com/in/aainabatool/'
   },
   {
