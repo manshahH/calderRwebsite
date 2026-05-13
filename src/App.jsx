@@ -8,6 +8,7 @@ import Hero from './components/sections/Hero';
 import Stats from './components/sections/Stats';
 import LogoMarquee from './components/sections/LogoMarquee';
 import Philosophy from './components/sections/Philosophy';
+import Team from './components/sections/Team';
 import Services from './components/sections/Services';
 import CTABanner from './components/sections/CTABanner';
 import Industries from './components/sections/Industries';
@@ -67,6 +68,7 @@ function App() {
             <LogoMarquee />
           </ErrorBoundary>
           <Philosophy />
+          <Team />
           <Services />
           <CTABanner title="Ready to See What AI Can Do?" subtitle="Book a free 30-minute strategy call. No pressure, no pitch. Just clarity." ctaText="Book Your Free Call →" ctaHref="#contact" />
           <Industries />
