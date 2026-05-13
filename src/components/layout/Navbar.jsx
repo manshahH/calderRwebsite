@@ -14,7 +14,7 @@ export default function Navbar() {
     setIsScrolled(latest > 60);
   });
 
-  const links = ['Services', 'Case Studies', 'Pricing', 'FAQ', 'Contact'];
+  const links = ['Services', 'Case Studies', 'Team', 'Pricing', 'FAQ', 'Contact'];
 
   return (
     <motion.nav

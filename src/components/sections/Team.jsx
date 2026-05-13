@@ -324,7 +324,7 @@ function TeamCard({ member }) {
 
 export default function Team() {
   return (
-    <section style={{ background: '#060A14', padding: '100px 0' }}>
+    <section id="team" style={{ background: '#060A14', padding: '100px 0' }}>
       <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 32px' }}>
         
         {/* Header */}
