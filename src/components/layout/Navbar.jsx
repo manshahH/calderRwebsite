@@ -120,7 +120,13 @@ export default function Navbar() {
                         closed: { opacity: 0, x: 20 }
                       }}
                       href={`#${item.toLowerCase().replace(' ', '-')}`} 
-                     
+                      key={item} 
+                      onClick={() => setMobileOpen(false)}
+                      className="text-2xl font-medium text-[#E2E8F2] hover:text-[#3BAFD4] transition-colors inline-block py-2"
+                    >
+                      <ScrambleText text={item} />
+                    </motion.a>
+                  ))}
                   <motion.div
                     variants={{
                       open: { opacity: 1, x: 0, transition: { type: 'spring', stiffness: 300, damping: 24 } },
@@ -134,13 +140,7 @@ export default function Navbar() {
                     >
                       <ScrambleText text="Audit" />
                     </Link>
-                  </motion.div> key={item} 
-                      onClick={() => setMobileOpen(false)}
-                      className="text-2xl font-medium text-[#E2E8F2] hover:text-[#3BAFD4] transition-colors inline-block py-2"
-                    >
-                      <ScrambleText text={item} />
-                    </motion.a>
-                  ))}
+                  </motion.div>
                 </motion.div>
               </SheetContent>
             </Sheet>
