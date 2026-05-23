@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 import ThreeBackground from '../ui/ThreeBackground';
 import CustomCursor from '../ui/CustomCursor';
 import ErrorBoundary from '../ui/ErrorBoundary';
@@ -10,11 +11,22 @@ import MagneticButton from '../ui/MagneticButton';
 
 export default function AuditComingSoon() {
   const [showWipe, setShowWipe] = useState(true);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Scroll to top
     window.scrollTo(0, 0);
   }, []);
+
+  const handleContactClick = () => {
+    navigate('/', { state: { scrollTo: 'contact' } });
+    setTimeout(() => {
+      const contactEl = document.getElementById('contact');
+      if (contactEl) {
+        contactEl.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
 
   return (
     <>
@@ -103,16 +115,19 @@ export default function AuditComingSoon() {
                   >
                     <h3 className="font-semibold text-[#E2E8F2] mb-2">{feature.title}</h3>
                     <p className="text-sm text-[#6B7A99]">{feature.description}</p>
-                  </motion.div>
-                ))}
-              </motion.div>
-
-              {/* CTA Buttons */}
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 0.9 }}
-                className="flex flex-col sm:flex-row items-center justify-center gap-4"
+                 button
+                  onClick={handleContactClick}
+                  className="px-6 py-3 rounded-lg bg-[#3BAFD4] text-white hover:bg-[#2a94b8] transition-all font-medium flex items-center gap-2"
+                >
+                  Notify Me When Live →
+                </button>
+                <button 
+                  onClick={() => navigate('/')}
+                  className="px-6 py-3 rounded-lg border border-[#3BAFD4]/30 text-[#3BAFD4] hover:bg-[#3BAFD4]/10 transition-all font-medium flex items-center gap-2"
+                >
+                  Back to Home
+                  <ArrowRight size={18} />
+                </buttonssName="flex flex-col sm:flex-row items-center justify-center gap-4"
               >
                 <MagneticButton variant="primary" href="/#contact">
                   Notify Me When Live →
