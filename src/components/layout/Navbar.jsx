@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, useMotionValueEvent, useScroll, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet';
 import MagneticButton from '../ui/MagneticButton';
 import ScrambleText from '../ui/ScrambleText';
@@ -55,6 +56,12 @@ export default function Navbar() {
               <ScrambleText text={item} />
             </a>
           ))}
+          <Link 
+            to="/audit"
+            className="text-[#E2E8F2]/70 hover:text-white font-medium text-sm transition-colors py-2 px-1"
+          >
+            <ScrambleText text="Audit" />
+          </Link>
         </div>
 
         {/* Right */}
@@ -113,7 +120,21 @@ export default function Navbar() {
                         closed: { opacity: 0, x: 20 }
                       }}
                       href={`#${item.toLowerCase().replace(' ', '-')}`} 
-                      key={item} 
+                     
+                  <motion.div
+                    variants={{
+                      open: { opacity: 1, x: 0, transition: { type: 'spring', stiffness: 300, damping: 24 } },
+                      closed: { opacity: 0, x: 20 }
+                    }}
+                  >
+                    <Link 
+                      to="/audit"
+                      onClick={() => setMobileOpen(false)}
+                      className="text-2xl font-medium text-[#E2E8F2] hover:text-[#3BAFD4] transition-colors inline-block py-2"
+                    >
+                      <ScrambleText text="Audit" />
+                    </Link>
+                  </motion.div> key={item} 
                       onClick={() => setMobileOpen(false)}
                       className="text-2xl font-medium text-[#E2E8F2] hover:text-[#3BAFD4] transition-colors inline-block py-2"
                     >
