@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+import { Routes, Route } from 'react-router-dom';
 import ThreeBackground from './components/ui/ThreeBackground';
 import CustomCursor from './components/ui/CustomCursor';
 import ErrorBoundary from './components/ui/ErrorBoundary';
@@ -20,6 +21,7 @@ import Pricing from './components/sections/Pricing';
 import FAQ from './components/sections/FAQ';
 import Contact from './components/sections/Contact';
 import Footer from './components/layout/Footer';
+import AuditComingSoon from './components/sections/AuditComingSoon';
 
 function App() {
   const [showWipe, setShowWipe] = useState(true);
@@ -40,6 +42,15 @@ function App() {
     return () => document.removeEventListener('click', handleAnchorClick);
   }, []);
 
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage showWipe={showWipe} setShowWipe={setShowWipe} />} />
+      <Route path="/audit" element={<AuditComingSoon />} />
+    </Routes>
+  );
+}
+
+function HomePage({ showWipe, setShowWipe }) {
   return (
     <>
       <AnimatePresence>

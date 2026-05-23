@@ -30,6 +30,7 @@
     "react-fast-marquee": "^1.6.5",
     "react-intersection-observer": "^10.0.3",
     "react-parallax-tilt": "^1.7.327",
+    "react-router-dom": "^7.15.1",
     "tailwind-merge": "^3.6.0",
     "three": "^0.184.0"
   },
