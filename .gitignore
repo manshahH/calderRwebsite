@@ -41,3 +41,7 @@ Thumbs.db
 
 # Reference file — don't expose client HTML
 reference.html
+
+# Rebuild guides / mockup HTML
+calderr-rebuild-guide.md
+calderr_pmc_redesign_mockup.html

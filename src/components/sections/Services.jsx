@@ -1,125 +1,103 @@
+import { useRef } from 'react';
+import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
-import Tilt from 'react-parallax-tilt';
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '../ui/hover-card';
-import { MessageSquare, Layers, Bot, BarChart3, Users, PenTool } from 'lucide-react';
-import RevealText from '../ui/RevealText';
 
-const services = [
+const SERVICES = [
   {
-    icon: MessageSquare,
-    title: "AI Chatbots & Assistants",
-    description: "Custom conversational agents trained on your business data, available 24/7 across web, app, and messaging platforms.",
-    stat: "One client deflected 62% of support tickets within 30 days"
+    icon: (
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="9" y="2" width="6" height="4" rx="1"/>
+        <path d="M3 6h18M5 6v14a2 2 0 002 2h10a2 2 0 002-2V6"/>
+        <path d="M9 11l2 2 4-4"/>
+      </svg>
+    ),
+    iconBg: '#E1F5EE',
+    iconColor: '#0F6E56',
+    title: 'Responsiveness audit',
+    desc: 'We submit real inquiries to your company and score how — and whether — you respond. Full report with breakdown.',
+    price: 'From $149 / audit',
   },
   {
-    icon: Layers,
-    title: "Business Process Automation",
-    description: "Eliminate repetitive tasks with intelligent workflows that connect your tools and handle the heavy lifting automatically.",
-    stat: "Reduced manual data entry by 14 hours per week"
+    icon: (
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"/>
+        <path d="m21 21-4.35-4.35M11 8v6M8 11h6"/>
+      </svg>
+    ),
+    iconBg: '#E6F1FB',
+    iconColor: '#185FA5',
+    title: 'Inquiry tracking',
+    desc: 'Ongoing monitoring of your inquiry channels — web forms, email, and phone — with monthly scorecards.',
+    price: 'From $299 / month',
   },
   {
-    icon: Bot,
-    title: "Custom AI Agents",
-    description: "Autonomous agents that research, decide, and act, completing multi-step tasks with minimal human intervention.",
-    stat: "Increased agent task completion rate by 3x"
+    icon: (
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <line x1="18" y1="20" x2="18" y2="10"/>
+        <line x1="12" y1="20" x2="12" y2="4"/>
+        <line x1="6" y1="20" x2="6" y2="14"/>
+      </svg>
+    ),
+    iconBg: '#FAEEDA',
+    iconColor: '#854F0B',
+    title: 'Operations report',
+    desc: "Deep-dive analysis of your PMC's online presence, response workflows, and owner communication quality.",
+    price: 'From $499 / report',
   },
   {
-    icon: BarChart3,
-    title: "Data Analysis & Insights",
-    description: "Transform raw business data into actionable insights with AI-powered analysis dashboards and automated reporting.",
-    stat: "Identified $120k in unoptimized ad spend"
+    icon: (
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
+        <circle cx="12" cy="12" r="3"/>
+      </svg>
+    ),
+    iconBg: '#FAECE7',
+    iconColor: '#993C1D',
+    title: 'Fix & optimize',
+    desc: "After the audit, we help you fix what's broken — scripts, workflows, and contact form improvements.",
+    price: 'Custom / project',
   },
-  {
-    icon: Users,
-    title: "AI-Powered Lead Generation",
-    description: "Identify, qualify, and nurture leads at scale using AI that learns your ideal customer profile and works around the clock.",
-    stat: "Boosted qualified lead pipeline by 45%"
-  },
-  {
-    icon: PenTool,
-    title: "AI Content & Copy Systems",
-    description: "Scalable content pipelines that generate on-brand copy, product descriptions, emails, and more, in your voice.",
-    stat: "Generated 1,200 product descriptions in 4 hours"
-  }
 ];
 
-const container = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: { staggerChildren: 0.07 }
-  }
-};
-
-const item = {
-  hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 90, damping: 18 } }
-};
-
 export default function Services() {
+  const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.1 });
+
   return (
-    <section className="py-24 px-6 relative z-10" id="services">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="flex flex-col items-center text-center mb-16">
-          <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-[#3BAFD4]/25 bg-[#3BAFD4]/[0.07] mb-6">
-            <span className="font-['JetBrains_Mono'] text-[11px] uppercase tracking-widest text-[#E2E8F2]">
-              What We Build
-            </span>
+    <section id="services" ref={ref} className="px-6 py-14 border-b border-black/[0.08]">
+      <div className="max-w-6xl mx-auto">
+        <div className="mb-8">
+          <div className="text-[11px] font-semibold text-brand-tint-text uppercase tracking-[0.6px] mb-2.5">
+            Services
           </div>
-          <RevealText 
-            tag="h2"
-            text={"Intelligent Systems.\nReal Business Results."}
-            className="font-['Syne'] font-[700] text-[clamp(32px,4vw,52px)] text-[#E2E8F2] tracking-[-1px] leading-[1.1] mb-6"
-          />
-          <p className="font-['Outfit'] font-[300] text-lg text-[#E2E8F2]/70 max-w-xl mx-auto">
-            We deploy bespoke AI architecture designed to seamlessly integrate with your existing infrastructure and drive immediate operational efficiency.
+          <h2 className="text-[24px] font-semibold text-gray-900 tracking-[-0.3px] mb-2.5">
+            What CalderR does for your PMC
+          </h2>
+          <p className="text-[14px] text-gray-500 max-w-[480px] leading-[1.6]">
+            Done-for-you services built around one goal: making sure your PMC never loses a client to poor communication.
           </p>
         </div>
 
-        {/* Grid */}
-        <motion.div 
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-white/10 rounded-2xl overflow-hidden border border-[rgba(255,255,255,0.07)]"
-        >
-          {services.map((service, i) => {
-            const Icon = service.icon;
-            return (
-              <motion.div key={i} variants={item} className="bg-[#060A14] flex flex-col h-full rounded-2xl overflow-hidden">
-                <Tilt tiltMaxAngleX={6} tiltMaxAngleY={6} scale={1.02} transitionSpeed={400} glareEnable={true} glareMaxOpacity={0.04} glareColor="#3BAFD4" glarePosition="all" glareBorderRadius="16px" className="flex flex-col h-full">
-                  <HoverCard openDelay={200} closeDelay={100}>
-                  <HoverCardTrigger asChild>
-                    <div className="group relative bg-[#060A14] hover:bg-[#0C1220] transition-colors duration-300 px-8 py-9 flex flex-col flex-grow cursor-pointer outline-none before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_top_center,rgba(59,175,212,0.06),transparent_70%)] before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 before:pointer-events-none">
-                      
-                      <div className="relative z-10 w-[42px] h-[42px] rounded-xl bg-[#3BAFD4]/[0.08] border border-[#3BAFD4]/15 flex items-center justify-center">
-                        <Icon className="w-[18px] h-[18px] stroke-[#3BAFD4]" strokeWidth={2} />
-                      </div>
-                      
-                      <h3 className="font-['Syne'] font-[700] text-[16px] text-[#E2E8F2] mt-5 mb-2.5 relative z-10">
-                        {service.title}
-                      </h3>
-                      
-                      <p className="font-['Outfit'] font-[300] text-sm text-[#E2E8F2]/70 leading-relaxed relative z-10 flex-grow">
-                        {service.description}
-                      </p>
-                      
-                      <div className="mt-4 flex items-center gap-1 group-hover:gap-2.5 transition-all duration-300 text-[#3BAFD4] text-xs font-semibold relative z-10">
-                        Learn more <span>&rarr;</span>
-                      </div>
-                    </div>
-                  </HoverCardTrigger>
-                  <HoverCardContent side="top" align="center" className="mb-2">
-                    {service.stat}
-                  </HoverCardContent>
-                </HoverCard>
-                </Tilt>
-              </motion.div>
-            );
-          })}
-        </motion.div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3.5">
+          {SERVICES.map(({ icon, iconBg, iconColor, title, desc, price }, i) => (
+            <motion.div
+              key={title}
+              initial={{ opacity: 0, y: 18 }}
+              animate={inView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.45, delay: i * 0.08 }}
+              className="bg-white border border-black/[0.08] rounded-card p-5 card-shadow-hover"
+            >
+              <div
+                className="w-[34px] h-[34px] rounded-lg flex items-center justify-center mb-3"
+                style={{ backgroundColor: iconBg, color: iconColor }}
+              >
+                {icon}
+              </div>
+              <h3 className="text-[14px] font-semibold text-gray-900 mb-1.5">{title}</h3>
+              <p className="text-[12px] text-gray-500 leading-[1.55] mb-3">{desc}</p>
+              <div className="text-[12px] font-semibold text-brand-tint-text">{price}</div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
