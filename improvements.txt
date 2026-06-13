@@ -1,0 +1,623 @@
+# Project brief
+
+**Company:** CalderR (calderr.com)
+**What:** AI automation agency for property management companies
+**Audience:** Directors of Operations, COOs, and Regional Managers at residential property management companies managing 200 to 5000 units, primarily US-based
+**Primary CTA across the site:** "Get your free Leasing Performance Audit"
+**Brand promise:** Operations-focused AI automation built by people who understand the operational reality of property management
+**Tone:** Direct, specific, numbers-driven, confident without being braggy. No corporate fluff. No AI hype words. We talk like operators, not vendors.
+
+# Brand voice rules (enforce these in all copy)
+
+- Lead with specific numbers and outcomes, not adjectives
+- No "revolutionary," "cutting-edge," "transformative," "leverage," "synergy," "innovative," "next-generation," "AI-powered" used as a primary descriptor
+- No "we're passionate about" or "our mission is to" openers
+- Active voice, present tense
+- Sentences under 25 words wherever possible
+- Skip em dashes; use periods, commas, or parentheses instead
+- Operator language: "PMCs," "Director of Ops," "unit count," "rent roll," "leasing inquiries," "maintenance triage," "owner reporting"
+- Pricing should be visible (pre-qualifies serious buyers)
+
+# Design system suggestions
+
+**Aesthetic:** Premium SaaS dark theme with operational/technical accents. Think Linear, Vercel, Resend, Stripe Docs. Restrained motion. Generous whitespace. Geometric.
+
+**Color palette suggestion:**
+- Background: near-black (#0A0A0A or #0D0D0F)
+- Surface: dark gray (#16161A)
+- Border: subtle (#2A2A2E)
+- Text primary: near-white (#F5F5F5)
+- Text secondary: muted gray (#A1A1AA)
+- Accent: a single signature color (suggestion: muted electric blue or amber/copper for warmth; avoid neon and avoid generic SaaS purple)
+- Success: subtle green for positive metrics
+- Warning: subtle amber for issues found in audits
+
+**Typography suggestion:**
+- Display: Inter Tight or General Sans (modern, geometric)
+- Body: Inter or IBM Plex Sans
+- Mono: JetBrains Mono or IBM Plex Mono for numbers, code, and data callouts
+- Heavy weight contrast between headlines (700/800) and body (400/500)
+
+**Components and motion:**
+- Subtle hover states (color shift, not dramatic transforms)
+- Fade-in on scroll, no parallax, no particle effects
+- Cards with thin borders, not heavy shadows
+- Numerical callouts in mono font, oversized
+- Data viz where appropriate (small bar charts, distribution curves)
+
+# Sitemap
+
+```
+/                  Homepage
+/audit             Free Leasing Performance Audit (primary conversion page)
+/build             What we build (portfolio pieces)
+  /build/leasing-concierge
+  /build/maintenance-triage
+  /build/owner-reporting
+  /build/vendor-invoices
+/case-studies      Case studies (empty initially)
+/about             About / founders
+/insights          Insights / blog
+/insights/[slug]   Individual post
+/contact           Contact page (or merged into footer)
+/privacy           Privacy policy
+/terms             Terms of service
+```
+
+# Page 1: Homepage
+
+URL: `/`
+Meta title: `Calder | AI Automation for Property Management Operators`
+Meta description: `We build AI systems that handle leasing inquiries, maintenance triage, and owner reporting for property management companies managing 200 to 5000 units. Get a free audit of your leasing operation.`
+
+## Section 1: Hero
+
+**Headline:**
+AI automation built for property management operations.
+
+**Subheadline:**
+We build leasing concierges, maintenance triage agents, and owner reporting systems for residential operators managing 200 to 5000 units. Less manual work. Faster response times. Happier owners.
+
+**Primary CTA button:** Get your free leasing audit
+**Secondary CTA button (text link with arrow):** See what we build
+
+**Visual:** A clean, structured visual on the right side. Suggestion: a stylized diagram showing inquiry inputs (SMS, email, web) flowing into a central agent, flowing to outputs (tour booked, vendor dispatched, owner notified). Use mono-font labels. Keep it abstract and geometric.
+
+## Section 2: Three-line proof bar
+
+A thin horizontal section with three stats side by side. These can be placeholders until you have real case study data; for now use industry benchmarks.
+
+**Stat 1:** 4.2 hours / Industry average response time on leasing inquiries
+**Stat 2:** 60% / Drop in conversion after 1 hour without response
+**Stat 3:** 22+ hours / Weekly leasing agent time spent on inquiry triage
+
+Below the stats:
+**Text:** We measure these numbers for your operation, then build the systems that fix them.
+
+## Section 3: The audit pitch
+
+**Headline:** Start with a free audit.
+
+**Body:**
+We test your leasing operation against 60 industry benchmarks. Response time, response quality, channel coverage, listing presence, tenant self-serve. You get a branded PDF report within 5 business days. No pitch attached.
+
+Most operators find issues costing them tens of thousands per year in missed leads.
+
+**CTA button:** Get your audit
+
+**Visual idea:** A mockup of the actual PDF report on the right. Slightly tilted, with a soft glow. Shows the cover page with a score, a few visible chart elements.
+
+## Section 4: What we build
+
+**Section headline:** What we build
+
+**Section subhead:** Four production-ready systems, deployed to your PMS and your team.
+
+Four cards, two by two grid (or four in a row on desktop, stacked on mobile).
+
+**Card 1: Leasing Concierge**
+Inbound leasing inquiries answered, qualified, and booked into tours within seconds. SMS, web chat, email. 24/7.
+Starts at $5,000 build + $1,500/mo retainer.
+→ Learn more
+
+**Card 2: Maintenance Triage**
+Tenant requests categorized, dispatched to the right vendor, and tracked end-to-end. Emergency escalation built in.
+Starts at $7,000 build + $2,500/mo retainer.
+→ Learn more
+
+**Card 3: Owner Reporting**
+Monthly owner statements with narrative commentary, generated and delivered automatically. Customizable per owner.
+Starts at $4,000 build + $1,000/mo retainer.
+→ Learn more
+
+**Card 4: Vendor Invoice Processing**
+Invoices extracted from email, validated against work orders, routed for approval, exported to your PMS.
+Starts at $3,500 build + $800/mo retainer.
+→ Learn more
+
+## Section 5: How we work
+
+**Section headline:** How we work
+
+Three columns, numbered.
+
+**01 / Audit**
+We run a 60-point audit of your operation and identify the highest-leverage automations. Free, no obligation.
+
+**02 / Build**
+We design and ship the system in 4 to 8 weeks, integrated with your existing PMS and channels.
+
+**03 / Operate**
+We maintain, monitor, and improve the system on a monthly retainer. You get reports on what it's doing and what's working.
+
+## Section 6: Why us
+
+**Section headline:** We build for operators, not investors.
+
+**Body:**
+Most AI vendors selling into property management have never managed a unit. We build systems based on operational reality. Every automation we ship is measured by hours saved, lead conversion, and owner retention. Not by AI buzzwords.
+
+If your PMS is AppFolio, Yardi, Buildium, or Rent Manager, we know how to work with it.
+
+**Logos row:** AppFolio, Yardi, Buildium, Rent Manager. Use grayscale, slightly faded. Note: "Compatible with" not "Partner with" unless you actually are a partner.
+
+## Section 7: Founders
+
+**Section headline:** Built by
+
+Two cards side by side.
+
+**Hamdan [Last Name]**
+Co-founder, technical
+BSAI, COMSATS University
+[One-line credential about AI work / experience]
+LinkedIn icon link
+
+**Aaina Batool**
+Co-founder, operations
+[Credential]
+[One-line about her focus]
+LinkedIn icon link
+
+**Photos:** Real founder photos, professionally shot or at least cleanly lit. No stock. No AI-generated.
+
+## Section 8: Final CTA
+
+Centered, large.
+
+**Headline:** Want to know how your leasing operation actually performs?
+
+**Subhead:** Get your free audit. We'll send your branded report within 5 business days.
+
+**CTA button:** Get my audit
+**Text below button:** No pitch attached. No automatic sales call.
+
+## Footer
+
+Left side:
+- Calder logo
+- One-line tagline: "AI automation for property management operations."
+- Copyright notice
+
+Middle column - Product:
+- What we build
+- Get an audit
+- Case studies
+- Pricing
+
+Right column - Company:
+- About
+- Insights
+- Contact
+- LinkedIn
+
+Bottom row:
+- Privacy
+- Terms
+- "Built in [year]"
+
+# Page 2: Audit landing page
+
+URL: `/audit`
+Meta title: `Free Leasing Performance Audit | Calder`
+Meta description: `We test your leasing operation against 60 industry benchmarks. Response time, response quality, channel coverage, listing presence. Branded PDF report delivered in 5 business days. Free.`
+
+This page is the most important on the site. Treat it as a conversion machine.
+
+## Section 1: Hero
+
+**Headline:**
+We'll audit your leasing operation against 60 benchmarks. Free.
+
+**Subhead:**
+Real test inquiries on your public listings. Real measurements. Branded PDF report delivered in 5 business days. No pitch attached.
+
+**Primary CTA:** Get my audit (anchor scrolls to form)
+**Secondary CTA:** View sample report (opens sample PDF in new tab)
+
+**Visual:** A large mockup of the sample report, prominently displayed. Glowing slightly. This is the conversion driver.
+
+## Section 2: What the audit covers
+
+**Section headline:** What we measure
+
+Five rows, each with an icon and explanation. Numeric badges (01, 02, 03 etc.) in mono font on the left.
+
+**01 / Response time**
+We submit a realistic test inquiry through your website and Zillow listings. We measure how fast you respond, through which channel, and whether you follow up if there's no reply.
+
+**02 / Response quality**
+We score the actual response on tone, pre-qualification, tour offer, and next steps. Most operators answer but don't sell.
+
+**03 / Channel coverage**
+We check whether you're reachable via SMS, web chat, email, phone, and after hours. The channel a prospect prefers should not determine whether they hear back.
+
+**04 / Listing presence**
+We audit your listings across Zillow, Apartments.com, Rent.com, Trulia, and Hotpads. Photos, descriptions, pricing transparency, and contact methods.
+
+**05 / Tenant self-serve**
+We check whether tenants and prospects can get answers without waiting for your team. FAQ pages, portals, knowledge bases.
+
+## Section 3: Sample report
+
+**Section headline:** This is what you get
+
+**Body:**
+A 4 to 6 page PDF report, branded with your company name on the cover. Overall score out of 100. Section-by-section breakdown with screenshots of your actual responses (or lack of). Comparison to anonymized peer benchmarks. Three specific recommendations.
+
+**Visual:** Embedded preview of the sample report. Allow users to scroll through pages inline, or open in a new tab.
+
+**CTA:** Get my audit
+
+## Section 4: How it works
+
+Four steps in a horizontal row.
+
+**Step 01 / Submit your company**
+Fill out the form below. Takes 30 seconds.
+
+**Step 02 / We run the audit**
+Our system tests your public-facing leasing operation. We use unique test personas with clear disclosure within 24 hours so your team knows what's happening.
+
+**Step 03 / You get the report**
+We email your branded PDF within 5 business days. Sometimes faster.
+
+**Step 04 / Optional conversation**
+If you want to discuss findings or what to do about them, book a call. If you don't, we won't chase you.
+
+## Section 5: FAQ
+
+**Section headline:** Common questions
+
+Six expandable items.
+
+**Q: Is this really free?**
+Yes. The audit produces real insight whether you ever hire us. We use it as our calling card.
+
+**Q: How do you run the test inquiries?**
+We submit through your public contact forms and listings using unique test personas. Within 24 hours, we disclose to your team that the inquiry was part of an industry study. You can request your data to be excluded at any point.
+
+**Q: What do you actually do with my data?**
+We use it to produce your branded report and, optionally, to compute anonymized aggregate statistics across operators in your metro. Your specific company is never identified publicly. You can opt out of aggregate use.
+
+**Q: Will you spam me afterward?**
+No. We send the report. We follow up once a week later asking if you want to discuss. After that we stop unless you reach out.
+
+**Q: How long does it take?**
+Most reports go out within 5 business days. Active audits with response measurement take that long because we wait 72 hours for your team to respond to the test inquiry.
+
+**Q: Who sees the report?**
+Only you, unless you choose to share it. We do not publish individual reports.
+
+## Section 6: Form
+
+**Headline above form:** Get your audit
+
+**Form fields:**
+- Full name (required)
+- Work email (required)
+- Company name (required)
+- Company website URL (required)
+- Your role (dropdown, optional): COO / Director of Operations / Regional Manager / Property Manager / Owner / Other
+- Approximate unit count (dropdown, optional): Under 200 / 200 to 500 / 500 to 1000 / 1000 to 2000 / 2000+
+
+**Submit button:** Get my audit
+
+**Microcopy below button:** We respect your inbox. No newsletter signup. No auto-pitch.
+
+## Section 7: Final reassurance
+
+Single centered block.
+
+**Headline:** Still on the fence?
+
+**Body:**
+The audit is real, it's free, and it's specific to your operation. Worst case you get a useful PDF and never hear from us again. Best case you find a leak that costs your operation real money and decide what to do about it.
+
+# Page 3: What we build (parent + sub-pages)
+
+URL: `/build`
+Meta title: `What we build | Calder`
+Meta description: `Four production-ready AI systems for property management operations. Leasing Concierge, Maintenance Triage, Owner Reporting, Vendor Invoice Processing.`
+
+## Section 1: Hero
+
+**Headline:**
+Four systems. Built for property management ops.
+
+**Subhead:**
+Each one ships in 4 to 8 weeks. Integrates with your PMS. Operated and improved on a monthly retainer.
+
+## Section 2: Four detailed cards
+
+Each card links to a sub-page. Card content (homepage cards but expanded):
+
+**Card 1: Leasing Concierge**
+The problem: Average response time on leasing inquiries is over 4 hours. After 1 hour, conversion drops by 60 percent.
+What it does: Answers, qualifies, and books tours across SMS, web chat, and email. 24/7. Fair-housing compliant. Hands off cleanly when humans are needed.
+Typical ROI: 15 to 22 hours per leasing agent per week, plus higher tour booking rates.
+Pricing: $5,000 to $10,000 build, $1,500 to $3,000 per month retainer.
+→ Learn more
+
+**Card 2: Maintenance Triage**
+The problem: Maintenance coordination eats hours of admin time and resolution times stretch for days.
+What it does: Categorizes inbound requests by urgency, dispatches the right vendor, tracks status, updates tenant, closes out in the PMS.
+Typical ROI: 30 to 50 percent reduction in coordinator hours, 40 percent faster resolution.
+Pricing: $7,000 to $15,000 build, $2,500 to $5,000 per month retainer.
+→ Learn more
+
+**Card 3: Owner Monthly Reporting**
+The problem: Owner reports either go out late, lack narrative, or both. Owners churn.
+What it does: Generates customized monthly reports per owner. Financial summary, operational summary, narrative commentary grounded in your data.
+Typical ROI: 8 to 15 hours saved per month, plus measurable owner retention improvement.
+Pricing: $4,000 to $8,000 build, $1,000 to $2,500 per month retainer.
+→ Learn more
+
+**Card 4: Vendor Invoice Processing**
+The problem: Vendor invoices arrive in 50 formats. Manual entry burns 6 to 12 hours per week.
+What it does: Extracts invoice data from email, validates against work orders, routes for approval, exports to your PMS.
+Typical ROI: 5 to 10 hours saved per week, plus fewer entry errors.
+Pricing: $3,500 to $7,000 build, $800 to $2,000 per month retainer.
+→ Learn more
+
+## Section 3: PMS compatibility
+
+**Headline:** Works with your PMS
+
+**Body:**
+We integrate at depth with Buildium and Rent Manager via their APIs. We work around AppFolio's API restrictions using exports and email integration. We handle Yardi Voyager and Breeze case-by-case. If you're on something else, we'll tell you honestly whether we can make it work.
+
+## Section 4: CTA
+
+**Headline:** Start with an audit
+**Body:** The audit will tell us which of these systems would help your operation most.
+**CTA:** Get your free audit
+
+## Sub-pages for each portfolio piece
+
+Each sub-page (`/build/leasing-concierge`, `/build/maintenance-triage`, etc.) follows the same structure:
+
+**Hero:** Headline naming the problem. Subhead naming the solution. CTA: "Talk to us about this" → contact form.
+**Workflow visual:** A clean diagram showing the system in operation.
+**What it does:** 5 to 7 bullet points of concrete capabilities.
+**Demo video:** 60 to 90 second Loom recording, embedded.
+**Integrations:** Logos of systems it talks to.
+**Pricing:** Range with what's included.
+**Timeline:** 4 to 8 weeks to deploy.
+**FAQ:** 4 to 6 questions specific to this system.
+**Final CTA.**
+
+I'll let the designer template these. The copy follows the same operator-language voice as the homepage.
+
+# Page 4: Case studies
+
+URL: `/case-studies`
+Meta title: `Case studies | Calder`
+Meta description: `Real results from property management operators we work with.`
+
+For now, this page has a placeholder.
+
+## Hero
+
+**Headline:** Case studies coming soon.
+
+**Body:**
+We're early. We're building case studies as we deliver pilots with our first clients. Want to be one of them?
+
+**CTA:** Get your free audit
+
+**Visual:** A subtle grid of empty card placeholders, with a "Coming soon" badge.
+
+Once you have your first case study, this page becomes a grid of case study cards. Each card: client name (or anonymized), unit count, one headline result, "Read case study" link. Each individual case study is its own page following a standard format.
+
+# Page 5: About
+
+URL: `/about`
+Meta title: `About Calder | AI automation for property management operations`
+
+## Section 1: Hero
+
+**Headline:**
+We build operations tools for property management, not pitch decks.
+
+**Subhead:**
+Calder is an AI automation agency focused on a single niche: residential property management companies. We work with operators managing 200 to 5000 units.
+
+## Section 2: Why we exist
+
+**Headline:** Why we exist
+
+**Body:**
+
+Property management is operations-heavy work. Leasing inquiries, maintenance dispatch, rent collection, owner reporting, vendor coordination, tenant communication. Most of it is repetitive. Most of it is currently done manually. And most of the AI vendors selling into this space have never actually managed a property.
+
+We started Calder because the gap between what AI can do and what property management operators actually use is enormous. Not because the technology is missing. Because the people building the technology don't understand the work.
+
+We're closing that gap, one operator at a time.
+
+## Section 3: How we work
+
+**Headline:** How we work
+
+**Body:**
+
+We focus on one vertical. We don't do generic AI consulting. We build a small number of specific systems we know cold, and we deploy them deeply.
+
+We start with a free audit because you should never have to guess whether we know what we're doing. The audit tells you, in real numbers, what's working and what isn't in your operation. Then you decide whether to build with us.
+
+We ship in 4 to 8 weeks, not 6 months. We integrate with your existing PMS and channels. We operate the system on a monthly retainer so you're never alone with software you don't understand.
+
+If your operation isn't a fit for us, we'll tell you. Most agencies won't.
+
+## Section 4: Founders
+
+**Headline:** Who we are
+
+Two larger cards side by side.
+
+**Hamdan [Last Name]**
+Co-founder. Builds the systems and runs the technical side. BSAI candidate at COMSATS University. Background in AI agent development, LangChain, and multi-agent workflows. Previously shipped [reference Structura or another project briefly].
+
+LinkedIn icon
+
+**Aaina Batool**
+Co-founder. Runs operations, client relationships, and delivery. [One sentence credential about her background and focus.]
+
+LinkedIn icon
+
+**Photos:** Real, well-lit, professional but not stiff.
+
+## Section 5: What we believe
+
+**Headline:** What we believe
+
+Five short principles, each one sentence.
+
+01 / Operations beat brand. We measure success in hours saved and dollars earned, not in awards.
+
+02 / The right tool, deployed deeply, beats ten generic tools. Specialization compounds.
+
+03 / Operators know their business. Our job is to listen first and build second.
+
+04 / AI fails on the boring edge cases. Human-in-the-loop matters more than model size.
+
+05 / If a system can't be explained simply, it shouldn't be sold.
+
+## Section 6: CTA
+
+**Headline:** Want to see what we'd find in your operation?
+**CTA:** Get your free audit
+
+# Page 6: Insights / blog
+
+URL: `/insights`
+
+## Hero
+
+**Headline:** Field notes from property management operations.
+
+**Subhead:** Audit findings, technical breakdowns, and contrarian takes on AI in multifamily ops. New posts roughly weekly.
+
+## Post grid
+
+Card grid layout. Each card: cover image, category tag (Audit Findings / Technical / Opinion), title, excerpt, read time, date.
+
+Three starter posts to populate the blog at launch. Suggested titles and angles:
+
+**Post 1 (Audit Findings):** "We tested 50 Phoenix property management companies on leasing response time. Here's what we found."
+
+**Post 2 (Technical):** "How an AI leasing concierge actually works (and why most chatbots in multifamily fail)."
+
+**Post 3 (Opinion):** "Why most property management AI startups will fail in the next 24 months."
+
+Write all three before launch so the blog isn't empty.
+
+# Page 7: Contact
+
+URL: `/contact`
+
+Simple page.
+
+**Headline:** Let's talk.
+
+**Body:** The fastest path is the free audit. If you'd rather just have a conversation, drop us a note here.
+
+**Form fields:**
+- Name (required)
+- Work email (required)
+- Company (required)
+- Message (required, textarea)
+
+**Submit button:** Send
+
+Below form: "Or email us directly at hello@calderr.com"
+
+LinkedIn icon, Twitter icon (if applicable).
+
+# Forms specification (for the designer)
+
+All forms across the site share these design rules:
+- Single-column layout (never two columns of fields)
+- Labels above inputs, not floating
+- Required fields marked subtly (small asterisk, not red)
+- Submit button full-width on mobile, auto-width on desktop
+- Success state: replace form with a clean confirmation message and a soft animation
+- Error state: red border on invalid fields, error message below each
+- No CAPTCHA visible; use invisible reCAPTCHA or hCaptcha
+- All form submissions trigger an email to your team + write to your CRM
+
+# Asset checklist (what to prepare before designer starts)
+
+**Logos:**
+- Calder logo (full color, white version, dark version, icon only)
+- Logo lockups for partner mentions
+
+**Photography:**
+- Hamdan headshot, professional, neutral background
+- Aaina headshot, professional, neutral background
+- Optional: founders together if you can shoot one
+
+**Illustrations / diagrams:**
+- Workflow diagrams for each portfolio piece (4 total)
+- Architecture diagram for homepage hero
+- Sample report cover page mockup (used on homepage and audit page)
+
+**Demo videos:**
+- 60 to 90 second Loom recording per portfolio piece (4 total)
+- Can ship without these initially; replace placeholder cards as videos are ready
+
+**Logos of compatible PMS:**
+- AppFolio, Yardi, Buildium, Rent Manager (use grayscale/faded versions)
+
+**Sample audit report:**
+- One polished anonymized sample PDF, hosted publicly, linked from the audit page
+
+# Technical specs (for the designer to coordinate with the engineer)
+
+- Framework: Next.js (App Router) or Astro for the marketing site
+- Deployment: Vercel
+- CMS for blog: MDX in repo, or Notion-backed via Super, or Sanity if you want a real CMS
+- Forms: Formspree or custom webhook to your CRM (Airtable/Notion for now)
+- Analytics: Plausible or Fathom
+- Calendar booking: Cal.com embedded on contact and audit follow-up pages
+- Email transactional: Resend or Postmark
+- Performance budget: Lighthouse score 95+ on mobile, sub-1.5 second LCP
+- SEO: sitemap.xml, robots.txt, Open Graph tags on every page, structured data for the organization
+- Mobile-first responsive
+- Dark mode is the default; light mode is optional (skip it for v1)
+
+# A note on what NOT to do (give this to the designer too)
+
+- No particle effects, mouse-tracking animations, or 3D scenes
+- No carousel/slider for testimonials or features
+- No chatbot widget in the corner of the site
+- No "Powered by AI" badges anywhere
+- No stock photography (real people, real screenshots, or nothing)
+- No more than one font weight per text block
+- No drop shadows heavier than 2px
+- No gradients on text
+- No auto-playing video with sound
+- No "live count" or "X people viewing this" elements
+- No animated counters that count up when scrolling into view (they're cliche now)
+
+This should be enough for Claude to design and code the entire site in one or two passes. Hand it the brand brief, the design system, the page-by-page content, the form specs, and the technical specs, and tell it to start with the homepage and audit landing page first. Those two pages do 80 percent of the conversion work. The rest can come in subsequent passes.

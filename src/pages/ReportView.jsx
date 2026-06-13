@@ -51,7 +51,7 @@ function StatusStepper({ status }) {
               <div className={`w-7 h-7 rounded-full flex items-center justify-center text-[11px] font-semibold transition-colors ${
                 done    ? 'bg-brand text-white' :
                 active  ? 'bg-brand text-white ring-4 ring-brand/20' :
-                          'bg-gray-100 text-gray-400'
+                          'bg-white/[0.08] text-text-muted'
               }`}>
                 {done ? (
                   <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" aria-hidden="true">
@@ -59,12 +59,12 @@ function StatusStepper({ status }) {
                   </svg>
                 ) : stepNum}
               </div>
-              <span className={`text-[10px] font-medium whitespace-nowrap ${active ? 'text-brand' : done ? 'text-gray-500' : 'text-gray-400'}`}>
+              <span className={`text-[10px] font-medium whitespace-nowrap ${active ? 'text-brand' : done ? 'text-text-secondary' : 'text-text-muted'}`}>
                 {label}
               </span>
             </div>
             {i < STEPS.length - 1 && (
-              <div className={`flex-1 h-[2px] mb-4 mx-1 rounded-full transition-colors ${done ? 'bg-brand' : 'bg-gray-100'}`} />
+              <div className={`flex-1 h-[2px] mb-4 mx-1 rounded-full transition-colors ${done ? 'bg-brand' : 'bg-white/[0.08]'}`} />
             )}
           </div>
         );
@@ -140,7 +140,7 @@ export default function ReportView() {
   const pdfUrl = pdfFilename ? `${WORKER_URL}/reports/${pdfFilename}` : null;
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[#0A0A0B] text-text-primary">
       <Navbar />
       <main className="pt-[72px]">
         <div className="max-w-2xl mx-auto px-6 py-14">
@@ -149,11 +149,11 @@ export default function ReportView() {
           {fetchError && !audit && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-20">
               <div className="text-[48px] mb-4">🔍</div>
-              <h1 className="text-[22px] font-semibold text-gray-900 mb-2">Audit not found</h1>
-              <p className="text-[14px] text-gray-500 mb-6">{fetchError}</p>
+              <h1 className="text-[22px] font-semibold text-text-primary mb-2">Audit not found</h1>
+              <p className="text-[14px] text-text-secondary mb-6">{fetchError}</p>
               <button
-                onClick={() => navigate('/#audit-cta')}
-                className="px-5 py-2.5 bg-brand text-white text-[14px] font-medium rounded-btn hover:bg-brand-dark transition-colors"
+                onClick={() => navigate('/audit')}
+                className="px-5 py-2.5 bg-accent text-white text-[14px] font-medium rounded-btn hover:bg-accent-dark transition-colors"
               >
                 Start a new audit
               </button>
@@ -167,7 +167,7 @@ export default function ReportView() {
                 <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
                 <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"/>
               </svg>
-              <p className="text-[14px] text-gray-400">Loading audit status…</p>
+              <p className="text-[14px] text-text-secondary">Loading audit status…</p>
             </div>
           )}
 
@@ -180,11 +180,11 @@ export default function ReportView() {
                 <div className="text-[11px] font-semibold text-brand-tint-text uppercase tracking-[0.6px] mb-2">
                   PMC Responsiveness Audit
                 </div>
-                <h1 className="text-[26px] font-semibold text-gray-900 tracking-[-0.4px]">
+                <h1 className="text-[26px] font-semibold text-text-primary tracking-[-0.4px]">
                   {audit.pmcName ?? 'Your PMC'}
                 </h1>
-                <p className="text-[13px] text-gray-400 mt-1">
-                  Audit ID: <span className="font-mono text-[12px]">{id}</span>
+                <p className="text-[13px] text-text-secondary mt-1">
+                  Audit ID: <span className="font-mono text-[12px] text-text-muted">{id}</span>
                 </p>
               </div>
 
@@ -195,7 +195,7 @@ export default function ReportView() {
               <div className={`rounded-card border p-6 mb-8 ${
                 isComplete
                   ? 'bg-brand-tint border-brand/20'
-                  : 'bg-[#F7F8FA] border-black/[0.08]'
+                  : 'bg-bg-surface border-white/[0.08]'
               }`}>
                 <div className="flex items-center gap-3 mb-3">
                   {isComplete ? (
@@ -207,13 +207,13 @@ export default function ReportView() {
                   ) : (
                     <PulsingDot />
                   )}
-                  <span className={`text-[14px] font-semibold ${isComplete ? 'text-brand-tint-text' : 'text-gray-900'}`}>
+                  <span className={`text-[14px] font-semibold ${isComplete ? 'text-brand-tint-text' : 'text-text-primary'}`}>
                     {statusInfo.label}
                   </span>
                 </div>
 
                 {!isComplete && (
-                  <p className="text-[13px] text-gray-500 leading-[1.6] pl-[26px]">
+                  <p className="text-[13px] text-text-secondary leading-[1.6] pl-[26px]">
                     Your audit is running automatically. This page refreshes every 10 seconds. Full reports are typically delivered within 48 hours — we'll also email the results when ready.
                   </p>
                 )}
@@ -227,7 +227,7 @@ export default function ReportView() {
                       href={pdfUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-brand hover:bg-brand-dark text-white text-[14px] font-medium rounded-btn transition-colors"
+                      className="inline-flex items-center gap-2 px-5 py-2.5 bg-accent hover:bg-accent-dark text-white text-[14px] font-medium rounded-btn transition-colors"
                     >
                       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -248,14 +248,14 @@ export default function ReportView() {
               </div>
 
               {/* Technical details (collapsible) */}
-              <details className="group border border-black/[0.07] rounded-card overflow-hidden">
-                <summary className="flex items-center justify-between px-5 py-3.5 cursor-pointer text-[13px] font-medium text-gray-600 hover:bg-gray-50 transition-colors list-none">
+              <details className="group border border-white/[0.08] rounded-card overflow-hidden">
+                <summary className="flex items-center justify-between px-5 py-3.5 cursor-pointer text-[13px] font-medium text-text-secondary hover:bg-white/[0.04] transition-colors list-none">
                   <span>Audit details</span>
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="transition-transform group-open:rotate-180" aria-hidden="true">
                     <polyline points="6 9 12 15 18 9"/>
                   </svg>
                 </summary>
-                <div className="px-5 py-4 bg-[#F7F8FA] border-t border-black/[0.06]">
+                <div className="px-5 py-4 bg-bg-surface border-t border-white/[0.06]">
                   <dl className="grid grid-cols-2 gap-x-4 gap-y-3 text-[12px]">
                     {[
                       ['Status', audit.status],
@@ -267,13 +267,13 @@ export default function ReportView() {
                       ['Persona email', audit.testPersonaEmail ?? '—'],
                     ].map(([k, v]) => (
                       <div key={k}>
-                        <dt className="text-gray-400">{k}</dt>
-                        <dd className="font-medium text-gray-700 break-all">{v}</dd>
+                        <dt className="text-text-muted">{k}</dt>
+                        <dd className="font-medium text-text-primary break-all">{v}</dd>
                       </div>
                     ))}
                   </dl>
                   {lastChecked && (
-                    <p className="mt-4 text-[11px] text-gray-400">
+                    <p className="mt-4 text-[11px] text-text-muted">
                       Last checked: {lastChecked.toLocaleTimeString()} · refreshes every 10s
                     </p>
                   )}
@@ -282,17 +282,15 @@ export default function ReportView() {
 
               {/* Bottom CTA */}
               {!isComplete && (
-                <div className="mt-8 pt-6 border-t border-black/[0.07] text-center">
-                  <p className="text-[13px] text-gray-500 mb-3">
+                <div className="mt-8 pt-6 border-t border-white/[0.08] text-center">
+                  <p className="text-[13px] text-text-secondary mb-3">
                     Want to audit another location?
                   </p>
                   <button
                     onClick={() => {
-                      const el = document.querySelector('#audit-cta');
-                      if (el) el.scrollIntoView({ behavior: 'smooth' });
-                      else navigate('/#audit-cta');
+                      navigate('/audit');
                     }}
-                    className="text-[13px] font-medium text-brand hover:text-brand-dark transition-colors"
+                    className="text-[13px] font-medium text-accent hover:text-accent-dark transition-colors"
                   >
                     Start another audit →
                   </button>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,8 +14,8 @@
   }
 
   body {
-    background: #FFFFFF;
-    color: #111827;
+    background: #0A0A0B;
+    color: #F2F2F3;
     font-family: 'Inter', system-ui, sans-serif;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
@@ -26,38 +26,66 @@
     width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background: #F7F8FA;
+    background: #111114;
   }
   ::-webkit-scrollbar-thumb {
-    background: #D1D5DB;
+    background: #3f3f46;
     border-radius: 100px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #1D9E75;
+    background: #3B82F6;
   }
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: #D1D5DB #F7F8FA;
+    scrollbar-color: #3f3f46 #111114;
   }
 }
 
 @layer utilities {
-  .section-divider {
-    border-bottom: 0.5px solid rgba(0, 0, 0, 0.08);
+  /* Section separators */
+  .section-border {
+    border-bottom: 1px solid rgba(255,255,255,0.06);
   }
 
-  .card-shadow {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+  /* Card variants */
+  .card-base {
+    background: #111114;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
   }
 
-  .card-shadow-hover {
-    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  .card-raised {
+    background: #18181C;
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 10px;
   }
 
-  .card-shadow-hover:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-    transform: translateY(-2px);
+  .card-hover {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .card-hover:hover {
+    border-color: rgba(59,130,246,0.3);
+    box-shadow: 0 0 0 1px rgba(59,130,246,0.15), 0 4px 20px rgba(0,0,0,0.3);
+  }
+
+  /* Accent glow */
+  .accent-glow {
+    box-shadow: 0 0 24px rgba(59,130,246,0.25);
+  }
+
+  /* Mono numbers */
+  .mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-feature-settings: 'tnum';
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* Legacy audit compat — light card for report pages */
+  .report-card {
+    background: #ffffff;
+    color: #111827;
   }
 }
 
@@ -68,10 +96,10 @@
 
 @keyframes bar-grow {
   from { width: 0%; }
-  to { width: var(--bar-target-width); }
+  to   { width: var(--bar-target-width); }
 }
 
-/* Fade-up animation for sections */
+/* Fade-up animation */
 .fade-up-anim {
   opacity: 0;
   transform: translateY(18px);
@@ -80,4 +108,21 @@
 .fade-up-anim.in-view {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Subtle grid background pattern */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 64px 64px;
+}
+
+/* Accent line for headings */
+.accent-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #3B82F6;
 }
