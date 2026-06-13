@@ -4,8 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Navbar from '../components/layout/Navbar';
 import Footer from '../components/layout/Footer';
 
-const WORKER_URL = import.meta.env.VITE_WORKER_URL;
-const WORKER_SECRET = import.meta.env.VITE_WORKER_SECRET;
+const WORKER_URL = import.meta.env.VITE_WORKER_URL || 'https://calder-audit-tool.h0essainr.workers.dev';
+const WORKER_SECRET = import.meta.env.VITE_WORKER_SECRET || 'hussainpixel123';
 
 const POLL_INTERVAL_MS = 10_000; // 10 seconds
 

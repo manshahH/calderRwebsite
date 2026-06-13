@@ -6,7 +6,7 @@ const FOUNDERS = [
   {
     name: 'Hamdan Sethi',
     role: 'Co-founder, technical',
-    cred: 'BSAI candidate, COMSATS University',
+    cred: 'AI Agent Developer',
     bio: 'Builds the systems. Background in AI agent development, LangChain, and multi-agent workflows.',
     linkedin: 'https://www.linkedin.com/in/hamdansethi',
     photo: '/team/hamdan.jpeg',

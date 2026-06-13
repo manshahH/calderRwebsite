@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useNavigate } from 'react-router-dom';
 
-const WORKER_URL = import.meta.env.VITE_WORKER_URL;
-const WORKER_SECRET = import.meta.env.VITE_WORKER_SECRET;
+const WORKER_URL = import.meta.env.VITE_WORKER_URL || 'https://calder-audit-tool.h0essainr.workers.dev';
+const WORKER_SECRET = import.meta.env.VITE_WORKER_SECRET || 'hussainpixel123';
 
 function nameFromUrl(url) {
   try {
